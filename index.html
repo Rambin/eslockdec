@@ -471,10 +471,21 @@ const selectFile = function()
 </script>
 <style>
 html {font-size:62.5%;}
-body {width:98%}
+body {width:98%;}
 body div {margin: 0 auto;width: 98%;width: 98vmin;}
 body, button {font-size:28vmin;font-size:5.6vmin;}
 .filename {border: solid #f00; border-width: 4px; border-width: 0.5vmin; border-radius: 16px; border-radius: 2vmin;}
+body {
+  color-scheme: light dark;
+  background-color: #FFF;
+  color: #000;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #CCC;
+  }
+}
 </style>
 <title>ES加密文件破解</title>
 <link rel="icon" href="data:,">
